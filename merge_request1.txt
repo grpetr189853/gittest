@@ -1,3 +1,4 @@
 merge request1
 this is the changes from branch C6
 merge request1
+this is the changes from branch C6
