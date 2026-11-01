@@ -10,8 +10,8 @@ def validate_email(email: str) -> bool:
     Returns:
         bool: True if the email address is valid, False otherwise.
     """
-    # Regular expression for validating an email address
-    email_regex = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$'
-
-    # Match the email against the regex
+    # Define the regular expression for a valid email address
+    email_regex = r"(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+    
+    # Use re.match to check if the email matches the pattern
     return bool(re.match(email_regex, email))
